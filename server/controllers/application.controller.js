@@ -135,7 +135,7 @@ export const updateStatus = async (req, res) => {
           <p>We are pleased to inform you that your application for the position of <strong>${applicationDetails.job.title}</strong> has been <strong>${status}</strong>.</p>
           <p>We will keep you informed about further steps in the hiring process.</p>
           <p>Thank you for applying!</p>
-          <p>Best regards,<br>Company Name</p>
+          <p>Best regards,<br>Job Hunt</p>
         ` // HTML body
       );
   

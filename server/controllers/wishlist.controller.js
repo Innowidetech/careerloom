@@ -6,8 +6,6 @@ export const addToWishlist = async (req, res) => {
     // const userId = req.user._id;
 
     try {
-        
-
         const newWishlistItem = new Wishlist({
             title,
             description,

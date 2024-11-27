@@ -127,14 +127,14 @@ export const login = async (req, res) => {
     let user = await User.findOne({ email });
     if (!user) {
       return res.status(400).json({
-        message: "Incorrect email or password.",
+        message: "No user found, Please Sign up",
         success: false,
       });
     }
     const isPasswordMatch = await bcrypt.compare(password, user.password);
     if (!isPasswordMatch) {
       return res.status(400).json({
-        message: "Incorrect email or password.",
+        message: "Incorrect password.",
         success: false,
       });
     }

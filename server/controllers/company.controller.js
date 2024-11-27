@@ -101,7 +101,25 @@ export const updateCompany = async (req, res) => {
         message: "Company not found.",
         success: false,
       });
-    }
+    };
+    if (!companyType) {
+      return res.status(404).json({
+        message: "Company type required.",
+        success: false,
+      });
+    };
+    if (!website) {
+      return res.status(404).json({
+        message: "Please provide company's website.",
+        success: false,
+      });
+    };
+    if (!location) {
+      return res.status(404).json({
+        message: "Location required.",
+        success: false,
+      });
+    };
     return res.status(200).json({
       message: "Company information updated.",
       success: true,
