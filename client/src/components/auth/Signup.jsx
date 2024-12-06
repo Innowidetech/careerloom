@@ -106,7 +106,7 @@ const Signup = () => {
         <div className="p-8 flex flex-col justify-center w-full md:w-[975px]">
           {error && <p className="text-red-500 text-center mb-4">{error}</p>}
           <form onSubmit={submitHandler} encType="multipart/form-data">
-            <h1 className="hidden md:block text-center font-bold text-gray-600 mb-2 text-3xl">JOB HUNT</h1>
+            <h1 className="hidden md:block text-center font-bold text-gray-600 mb-2 text-3xl">careerloom</h1>
             <h1 className="hidden md:block text-center font-semibold text-gray-600 mb-1 text-1xl">Sign Up</h1>
 
             <div className="mb-2">

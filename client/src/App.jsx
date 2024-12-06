@@ -16,13 +16,13 @@ import JobEdit from "./components/admin/JobEdit";
 import Applicants from "./components/admin/Applicants";
 import ProtectedRoute from "./components/admin/ProtectedRoute";
 import { TestHomePage } from "./components/ThomePage/ThomePage";
-import FrontendJobs from "./components/domain/FrontendJobs";
-import BackendJobs from "./components/domain/BackendJobs";
-import FullStackJobs from "./components/domain/FullStackJobs";
-import Graphicsjobs from "./components/domain/Graphicsjobs";
-import DataScienceJobs from "./components/domain/DataScienceJobs";
-import Filter from "./components/domain/Filter";
-import Header from "./components/domain/Header";
+// import FrontendJobs from "./components/domain/FrontendJobs";
+// import BackendJobs from "./components/domain/BackendJobs";
+// import FullStackJobs from "./components/domain/FullStackJobs";
+// import Graphicsjobs from "./components/domain/Graphicsjobs";
+// import DataScienceJobs from "./components/domain/DataScienceJobs";
+// import Filter from "./components/domain/Filter";
+// import Header from "./components/domain/Header";
 import Wishlist from "./components/Wishlist";
 import ResetPassword from "./components/auth/ResetPassword";
 import ForgotPassword from "./components/auth/ForgotPassword";
@@ -64,14 +64,6 @@ const appRouter = createBrowserRouter([
     element : <CompanyDetails />
   },
   {
-    path: "/frontend",
-    element: <FrontendJobs/>,
-  },
-  {
-    path: "/backend",
-    element: <BackendJobs/>,
-  },
-  {
     path: "/company",
     element: <Company/>,
   },
@@ -84,24 +76,8 @@ const appRouter = createBrowserRouter([
     element: <ResetPassword/>,
   },
   {
-    path: "/datascience",
-    element: <DataScienceJobs/>,
-  },
-  {
-    path: "/graphicdesigner",
-    element: <Graphicsjobs/>,
-  },
-  {
-    path: "/fullstack",
-    element: <FullStackJobs/>,
-  },
-  {
     path: "/profile",
     element: <Profile />,
-  },
-  {
-    path: "/header",
-    element: <Header />,
   },
   {
     path: "/wishlist",

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Button } from "../ui/button";
-import { LogOut, User2, Menu, X, Bookmark } from "lucide-react"; // Import the Bookmark icon for wishlist
+import { LogOut, User2, Menu, X, Bookmark } from "lucide-react"; 
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
@@ -10,6 +10,7 @@ import { setUser } from "@/redux/authSlice";
 import { toast } from "sonner";
 import { FaUser } from "react-icons/fa";
 import { CiLogout } from "react-icons/ci";
+import logo from '/logo.png';
 import './style.css';
 
 const defaultProfilePhoto = "/images/icons8-person-64.png";
@@ -45,8 +46,9 @@ const Navbar = () => {
     <div>
       <div className="flex items-center justify-between mx-auto max-w-7xl h-16 px-4">
         <div className="flex items-center gap-4">
+          <img src={logo} alt="" className="h-8 w-8 translate-x-4"/>
         <h1 className="text-2xl font-bold cursor-pointer text-[#4A4E69] min-w-[200px]" style={{ fontFamily: 'Inter' }} onClick={(e) => navigate('/')}>
-            Job Hunt
+            careerloom
           </h1>
         </div>
 

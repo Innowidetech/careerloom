@@ -94,7 +94,7 @@ const Login = () => {
         <div className="p-8 flex flex-col justify-center w-full md:w-[995px]">
           <form onSubmit={submitHandler}>
             <h1 className="hidden md:block text-center font-medium text-gray-600 mb-4 text-3xl" style={{fontFamily:'Inter'}}>
-              JOB HUNT
+              careerloom
             </h1>
             <h1 className="text-center font-medium text-customBlue mb-4" style={{fontFamily:'Inter'}}>
               Login

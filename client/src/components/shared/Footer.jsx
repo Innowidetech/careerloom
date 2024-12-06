@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaFacebook, FaInstagram, FaTwitter, FaChevronDown } from 'react-icons/fa';
 import { useSelector } from "react-redux";
 import { useNavigate } from 'react-router-dom';
+import logo from '/logo.png';
 
 const Footer = () => {
   const { allJobs } = useSelector((store) => store.job);
@@ -38,20 +39,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:justify-between md:items-start">
           {/* Social media links */}
-          <div className="flex flex-col mb-6 md:w-1/4">
-            <h1 className='text-customBlue text-2xl font-bold mb-4'>JOB HUNT</h1>
-            <h2 className="text-xl font-semibold mb-4">Follow Us</h2>
-            <div className="flex space-x-6">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition duration-300 text-blue-600">
-                <FaFacebook size={42} />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition duration-300 text-blue-400">
-                <FaTwitter size={42} />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition duration-300 text-pink-500">
-                <FaInstagram size={42} />
-              </a>
-            </div>
+          <div className="flex flex-col mb-6 md:w-1/4 justify-center">
+            <img src={logo} alt="logo" className='h-[200px] md:w-[200px]'/> 
           </div>
 
           {/* Job categories */}
