@@ -21,15 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:["http://localhost:5173","https://jobportal-03.web.app"],
-    // methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],
-    // allowedHeaders: [
-    //   "Content-Type",
-    //   "Authorization",
-    //   "Cache-Control",
-    //   "Expires",
-    //   "Pragma",
-    // ],
+    origin:["http://localhost:5173","https://jobportal-03.web.app","https://careerloom-i.web.app"],
     credentials:true
 }
 
