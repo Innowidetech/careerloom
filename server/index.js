@@ -20,12 +20,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
-const corsOptions = {
-    origin:["http://localhost:5173","https://jobportal-03.web.app","https://careerloom-i.web.app"],
-    credentials:true
-}
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 const PORT = process.env.PORT || 8000;
 
